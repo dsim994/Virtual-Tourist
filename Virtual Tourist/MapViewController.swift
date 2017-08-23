@@ -25,7 +25,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, UIGestureRecognize
     var selectedPin: Pin? = nil
     var editingPins = false
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
