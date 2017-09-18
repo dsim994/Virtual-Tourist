@@ -6,6 +6,10 @@ Virtual Tourist is an application that allows users to drop a pin on a map and g
 
 The app will start downloading the appropriate photos from Flickr related to the location selected. Then images will be displayed in a collection view as soon as you drop the pin on the Map, if you want to see more pictures you can use the "New Collection" button. The app will remember the places where you dropped a pin on a previous selection. Users will also be able to move pins to download new pictures and remove unwanted pins.
 
+The complete project specifications can be found [here](https://review.udacity.com/#!/rubrics/21/view)
+
+<img src="ScreenShots/IMG_0237.PNG" height="500"> <img src="ScreenShots/IMG_0238.PNG" height="500"> <img src="ScreenShots/IMG_0240.PNG" height="500">
+
 ### Implementation
 This Application has two View Controller Scenes:
 
