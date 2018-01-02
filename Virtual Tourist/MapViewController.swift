@@ -41,7 +41,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, UIGestureRecognize
         self.mapView.addGestureRecognizer(lpgr)
     }
     
-    func addPinToMap(gestureRecognizer: UILongPressGestureRecognizer) {
+    @objc func addPinToMap(gestureRecognizer: UILongPressGestureRecognizer) {
         
         if gestureRecognizer.state == UIGestureRecognizerState.began {
             

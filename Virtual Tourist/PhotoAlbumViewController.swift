@@ -172,7 +172,7 @@ extension PhotoAlbumViewController:UICollectionViewDataSource {
                 }
                 DispatchQueue.main.async {
                     
-                        pic.image = imageData
+                    pic.image = imageData as Data
                         self.stack.save()
                         
                         if let updateCell = self.collectionView.cellForItem(at: indexPath) as? PhotoCell {
