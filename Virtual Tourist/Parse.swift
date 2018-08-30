@@ -15,7 +15,7 @@ class Parse {
     static func toNSData(requestBody : [String:AnyObject]? = nil) -> NSData {
         var jsonData:NSData! = nil
         do {
-            jsonData = try JSONSerialization.data(withJSONObject: requestBody!, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData!
+            jsonData = try JSONSerialization.data(withJSONObject: requestBody!, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData?
         } catch let error as NSError {
             print(error)
         }
