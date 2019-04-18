@@ -53,7 +53,7 @@ class PhotoAlbumViewController: UIViewController {
     
     func initializeFlowLayout() {
         
-        collectionView?.contentMode = UIViewContentMode.scaleAspectFit
+        collectionView?.contentMode = UIView.ContentMode.scaleAspectFit
         collectionView?.backgroundColor = UIColor.white
         
         let space : CGFloat = 2.0
@@ -130,7 +130,7 @@ extension PhotoAlbumViewController:UICollectionViewDelegate {
         
         let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! PhotoCell
         
-        if let index = selectedPhotos.index(of: indexPath as NSIndexPath) {
+        if let index = selectedPhotos.firstIndex(of: indexPath as NSIndexPath) {
             selectedPhotos.remove(at: index)
         } else {
             selectedPhotos.append(indexPath as NSIndexPath)
@@ -140,7 +140,7 @@ extension PhotoAlbumViewController:UICollectionViewDelegate {
 
     func configureCellSection(cell: PhotoCell, indexPath: NSIndexPath) {
         
-        if let _ = selectedPhotos.index(of: indexPath) {
+        if let _ = selectedPhotos.firstIndex(of: indexPath) {
             cell.alpha = 0.5
         } else {
             cell.alpha = 1.0

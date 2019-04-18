@@ -43,7 +43,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, UIGestureRecognize
     
     @objc func addPinToMap(gestureRecognizer: UILongPressGestureRecognizer) {
         
-        if gestureRecognizer.state == UIGestureRecognizerState.began {
+        if gestureRecognizer.state == UIGestureRecognizer.State.began {
             
             let point = gestureRecognizer.location(in: mapView)
             let coordinate = mapView.convert(point, toCoordinateFrom: mapView)
