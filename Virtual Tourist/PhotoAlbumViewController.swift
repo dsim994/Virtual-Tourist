@@ -180,15 +180,17 @@ extension PhotoAlbumViewController:UICollectionViewDataSource {
                             updateCell.activityIndicator.stopAnimating()
                         }
                 }
+                
                 cell.imageView.image = UIImage(data: imageData as Data)
                 self.configureCellSection(cell: cell, indexPath: indexPath as NSIndexPath)
+                
             }
+            
         } else {
             // Display From Core Data
             cell.imageView.image = UIImage(data: pic.image! as Data)
         }
         return cell
-    
     }
 }
 
