@@ -8,7 +8,7 @@ Swift application that uses the MapKit framework to give users ability to drop p
 ### Implementation
 2 View Controller Scenes:
 
-* __MapController__- Upon launch you will be presented with a Map View which thanks to core data saves your previous sessions dropped pins. When a pin is tapped user is directed to the Photo Album View while downloading the images realitive to that pins location. Pressing and holding users selected location on the map will drop a new pin to retrieve images.
+* __MapController__- Upon launch you will be presented with a map view which saves previous sessions dropped pins with core data. When a pin is pressed user is directed to Photo Album View while downloading images realitive to that pins location. Pressing and holding a specific location on the map will drop a new pin and an edit button to delete previous dropped pins.
 
 * __CollectionController__ - If images are available they will be displayed in a collection view once they have all been downloaded. Pressing the new collection button will empty the photo album and fetch a new set of images. Users are able to remove photos from an album by tapping them. Pressing the back button will end the session and direct user to MapController.
 
